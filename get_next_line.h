@@ -6,7 +6,7 @@
 /*   By: flmarsou <flmarsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 11:12:10 by flmarsou          #+#    #+#             */
-/*   Updated: 2024/05/17 09:57:44 by flmarsou         ###   ########.fr       */
+/*   Updated: 2024/05/17 14:18:21 by flmarsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 # include <stdio.h>		// printf()
 # include <stdlib.h>	// malloc(), free()
 # include <fcntl.h>		// open()
-# include <string.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 42
 # endif
+
+char	*get_next_line(int fd);
 
 size_t	ft_strlen(char *str);
 char	*ft_strchr(char *str, char target);
