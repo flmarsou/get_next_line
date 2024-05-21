@@ -6,7 +6,7 @@
 /*   By: flmarsou <flmarsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 11:14:43 by flmarsou          #+#    #+#             */
-/*   Updated: 2024/05/20 11:19:01 by flmarsou         ###   ########.fr       */
+/*   Updated: 2024/05/21 08:42:25 by flmarsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,15 @@ static char	*get_stash(char *stash)
 	if (stash[i] == '\0')
 		return (free_var(NULL, stash));
 	i++;
-	temp_stash = (char *)malloc(sizeof(char) * (ft_strlen(stash) - 1 + 1));
+	temp_stash = (char *)malloc(sizeof(char) * (ft_strlen(stash)));
 	if (temp_stash == NULL)
 		return (NULL);
 	while (stash[i])
-		temp_stash[j++] = stash[i++];
+	{
+		temp_stash[j] = stash[i];
+		i++;
+		j++;
+	}
 	temp_stash[j] = '\0';
 	free(stash);
 	return (temp_stash);
