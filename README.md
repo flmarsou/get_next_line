@@ -7,7 +7,7 @@ The aim of this project is to code a function that returns a line read from a fi
 # ⚒️ Compilation
 
 1. Remove the comment from the main function in `get_next_line.c`.
-2. Run `cc -Wall -Werror -Wextra -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c`, you can set the BUFFER_SIZE to your heart's content.
+2. Run `cc -Wall -Werror -Wextra -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c`, you can set the BUFFER_SIZE's value to your heart's content.
 3. Run with `./a.out`.
 
 # ✨ Summary
