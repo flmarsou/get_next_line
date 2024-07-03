@@ -23,5 +23,5 @@ The aim of this project is to code a function that returns a line read from a fi
 # 📑 List of Files
 
 - [x] [`get_next_line.c`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - Main file.
-- [x] [`get_next_line_utils.c`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - Full of with external function.
+- [x] [`get_next_line_utils.c`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - External functions.
 - [x] [`get_next_line.h`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - Header file.
