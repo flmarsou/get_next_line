@@ -1,14 +1,33 @@
 # 🦊 What is get_next_line?
 
-Reading a line on a fd is way too tedious...
+The objective of this project is to create a function that reads a single line from a **file descriptor (fd)**. \
+The function will then return the next line each time it is called, returning NULL once it has nothing left to read.
 
-The aim of this project is to code a function that returns a line read from a file descriptor. Returns the following line when called again.
+It helps you understand how to use **open**, **read**, **close**, and **file descriptors**. Making it an essential function for later projects.
 
-# ⚒️ Compilation
+# ⚒️ Example Usage
 
-1. Remove the comment from the main function in `get_next_line.c`.
-2. Run `cc -Wall -Werror -Wextra -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c`, you can set the BUFFER_SIZE's value to your heart's content.
-3. Run with `./a.out`.
+```c
+#include "get_next_line.h"
+#include <fcntl.h>		// open
+#include <stdio.h>		// read, close
+
+int	main(void)
+{
+	int	fd = open("example.txt", O_RDONLY);	// Path to the file descriptor.
+	char	*line = get_next_line(fd);		// Stores the first line.
+
+	while (line)
+	{
+		printf("%s", line);		// Prints current line.
+		free(line);			// Frees current line.
+		line = get_next_line(fd);	// Gets Next Line.
+	}
+
+	close(fd);
+	return (0);
+}
+```
 
 # ✨ Summary
 
