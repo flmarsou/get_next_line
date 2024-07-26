@@ -41,6 +41,6 @@ int	main(void)
 
 # 📑 List of Files
 
-- [x] [`get_next_line.c`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - Main file.
-- [x] [`get_next_line_utils.c`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - External functions.
-- [x] [`get_next_line.h`](https://github.com/flmarsou/2.2-get_next_line/blob/main/get_next_line.c) - Header file.
+- [x] [`get_next_line.c`](https://github.com/flmarsou/get_next_line/blob/main/get_next_line.c) - Main file.
+- [x] [`get_next_line_utils.c`](https://github.com/flmarsou/get_next_line/blob/main/get_next_line_utils.c) - External functions.
+- [x] [`get_next_line.h`](https://github.com/flmarsou/get_next_line/blob/main/get_next_line.h) - Header file.
